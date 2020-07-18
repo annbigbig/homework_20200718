@@ -31,7 +31,11 @@ public class HashServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String original = request.getParameter("original");
-		String hash = MD5Converter.getMD5hash(original);
+		//String hash = MD5Converter.getMD5hash(original);
+		
+		//stronger security if we use salt to encrypt string, thank you @hirakujira
+
+		String hash = MD5Converter.getMD5hash("Hail HYDRA",original);
 		
 		response.sendRedirect("hash.jsp?hash=" + URLEncoder.encode(hash, "UTF-8"));
 	}

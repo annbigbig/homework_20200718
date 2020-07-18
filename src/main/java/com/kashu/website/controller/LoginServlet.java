@@ -40,7 +40,8 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String account = request.getParameter("account");
 		String password = request.getParameter("password");
-		String password_hash = MD5Converter.getMD5hash(password);
+		//String password_hash = MD5Converter.getMD5hash(password);
+		String password_hash = MD5Converter.getMD5hash("Hail HYDRA", password);
 		String message = "";
 		User user = userDao.login(account, password_hash);
 		User existed = userDao.getByAccount(account);

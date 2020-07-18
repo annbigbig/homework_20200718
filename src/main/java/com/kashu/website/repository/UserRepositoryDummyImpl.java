@@ -14,9 +14,9 @@ public class UserRepositoryDummyImpl implements UserRepository {
 	HashMap<String,User> users = new HashMap<String,User>();
 	
 	public UserRepositoryDummyImpl() {
-		User rooot = new User("A18C582D-C7DA-11EA-8F7E-D92940C8286F","Rooot","rooot","0EF25578351AE6D571E13D4F0A35010E");
-		User johnny = new User("A6B26A18-C7DA-11EA-8F7E-D92940C8286F","Johnny","johnny","6A44739CC0A64632B24A2870095A0342");
-		User julia = new User("AD533994-C7DA-11EA-8F7E-D92940C8286F","Julia","julia","A14E8B78E7F70836F0FAB864EEE00C6D");
+		User rooot = new User("A18C582D-C7DA-11EA-8F7E-D92940C8286F","Rooot","rooot","b2bf6b8d31d1bff9d3fb6ca45244f32c");
+		User johnny = new User("A6B26A18-C7DA-11EA-8F7E-D92940C8286F","Johnny","johnny","f2735e411f697ce721c5024720968f6a");
+		User julia = new User("AD533994-C7DA-11EA-8F7E-D92940C8286F","Julia","julia","116f77a3fda354d9df1c3bb2a7586d54");
 		users.put("rooot",rooot);
 		users.put("johnny",johnny);
 		users.put("julia",julia);
@@ -28,11 +28,11 @@ public class UserRepositoryDummyImpl implements UserRepository {
 
 	public User login(String account, String password) {
 		User user = null;
-		if (account.equals("rooot") && password.equals("0EF25578351AE6D571E13D4F0A35010E")) {
+		if (account.equals("rooot") && password.equals("b2bf6b8d31d1bff9d3fb6ca45244f32c")) {
 			user = users.get("rooot");
-		}else if(account.equals("johnny") && password.equals("6A44739CC0A64632B24A2870095A0342")) {
+		}else if(account.equals("johnny") && password.equals("f2735e411f697ce721c5024720968f6a")) {
 			user = users.get("johnny");
-		}else if(account.equals("julia") && password.equals("A14E8B78E7F70836F0FAB864EEE00C6D")) {
+		}else if(account.equals("julia") && password.equals("116f77a3fda354d9df1c3bb2a7586d54")) {
 			user = users.get("julia");
 		}
 		return user;
