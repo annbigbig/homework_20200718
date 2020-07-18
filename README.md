@@ -68,9 +68,9 @@ CREATE TABLE IF NOT EXISTS TB_YOAN_USER (
     PRIMARY KEY ( id_bin )
 )  ENGINE=INNODB;
 
-insert into TB_YOAN_USER (id_bin,name,account,password) values(unhex(replace(uuid(),'-','')), 'Admin','admin','25E4EE4E9229397B6B17776BFCEAF8E7');
-insert into TB_YOAN_USER (id_bin,name,account,password) values(unhex(replace(uuid(),'-','')), 'Tony','tony','0D87EB66F2EEE68840F9C694F9B1C881');
-insert into TB_YOAN_USER (id_bin,name,account,password) values(unhex(replace(uuid(),'-','')), 'Lisa','lisa','53E466776EE87CD925AD74D64EAEAB92');
+insert into TB_YOAN_USER (id_bin,name,account,password) values(unhex(replace(uuid(),'-','')), 'Admin','admin','a05f9d34b9ca3dcc93bdee7bc37b7e0e');
+insert into TB_YOAN_USER (id_bin,name,account,password) values(unhex(replace(uuid(),'-','')), 'Tony','tony','ac61a6ff1d90274772c37ad74758877c');
+insert into TB_YOAN_USER (id_bin,name,account,password) values(unhex(replace(uuid(),'-','')), 'Lisa','lisa','f5971d79c9d7fa030a7b4652ba6bc7a9');
 
 ```
 
