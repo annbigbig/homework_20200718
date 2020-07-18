@@ -24,7 +24,6 @@ there are three posible reactions
 Via Maven command:
 
 ``` bash
-$ cd My-project-01
 $ mvn clean
 $ mvn package
 ```
